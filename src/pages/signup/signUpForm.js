@@ -1,9 +1,7 @@
 import React from "react";
-
 import "./signUpForm.css";
-
-import logo from "./LOGO.png";
-import google from "./Google.png";
+import logo from "../../assets/LOGO.png";
+import google from "../../assets/Google.png";
 
 const SignUpForm = () => {
   return (
