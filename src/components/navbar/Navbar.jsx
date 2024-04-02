@@ -28,15 +28,24 @@ const Navbar = ({ open, ToggleMenu }) => {
             )}
           </div>
 
-          <IoSearchOutline size={20} className="cursor-pointer" />
+          <IoSearchOutline
+            size={20}
+            className="cursor-pointer flex lg:hidden"
+          />
+          <IoSearchOutline
+            size={25}
+            className="cursor-pointer hidden lg:flex"
+          />
         </div>
         <div className="w-[50px] lg:w-[68px]">
           <img src={Logo} alt="Logo" />
         </div>
         <div>
-          <button className="font-[400] text-[14px] lg:text-[18px]">
-            Sign-up/Log-in
-          </button>
+          <Link to="/sign-up">
+            <button className="font-[400] text-[16px] lg:text-[18px]">
+              Sign-up/Log-in
+            </button>
+          </Link>
         </div>
       </div>
 
