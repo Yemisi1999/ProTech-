@@ -2,13 +2,14 @@ import React from "react";
 import "./signUpForm.css";
 import logo from "../../assets/LOGO.png";
 import google from "../../assets/Google.png";
+import { Link } from "react-router-dom";
 
 const SignUpForm = () => {
   return (
     <div className="main">
       <div className="leftSide">
         <div className="nav">
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
         </div>
         <div className="img">
           <img src={logo} alt="" />
@@ -53,7 +54,7 @@ const SignUpForm = () => {
           </button>
 
           <p>
-            Already have an account? <a href="#">Log In</a>
+            Already have an account? <Link to="/login">Log In</Link>
           </p>
         </div>
       </div>
