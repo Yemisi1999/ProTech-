@@ -1,13 +1,8 @@
-import "./App.css";
 import React from "react";
-import SignUpForm from "./signUpForm.js";
+import AppRoutes from "./routes/appRoutes.jsx";
 
 function App() {
-  return (
-    <div>
-      <SignUpForm />
-    </div>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
