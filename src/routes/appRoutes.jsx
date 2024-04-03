@@ -6,7 +6,7 @@ import HealthAndWellness from "../pages/healthandwellness/HealthAndWellness";
 import ToolsAndFeatures from "../pages/toolsandfeatures/ToolsAndFeatures";
 import MarketPlace from "../pages/marketplace/MarketPlace";
 import Community from "../pages/community/Community";
-
+import LoginForm from "../pages/signInForm/LoginForm";
 const AppRoutes = () => {
   return (
     <Routes>
@@ -27,6 +27,9 @@ const AppRoutes = () => {
 
       {/* Auth Screens */}
       <Route path="/sign-up" element={<SignUpForm />} />
+
+      {/* Login*/}
+      <Route path="/login" element={<LoginForm />} />
     </Routes>
   );
 };
