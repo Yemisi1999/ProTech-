@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
-.hero{
-  background: linear-gradient(90deg, #FFDEEF 37%, #DFF3FA 100%);
+.hero,
+.footer {
+  background: linear-gradient(90deg, #ffdeef 37%, #dff3fa 100%);
+}
+
+.health,
+.marketplace,
+.FAQS {
+  background: #ffdeef;
 }
