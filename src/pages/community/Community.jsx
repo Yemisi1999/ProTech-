@@ -1,8 +1,19 @@
 import React from "react";
 import Logo from "../../assets/LOGO.png";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Community = () => {
+  const nav = useNavigate();
+
+  const HandleNursingMothers = () => {
+    nav("/community:id");
+  };
+
+  const HandleExpectingMothers = () => {
+    nav("/community:id");
+  };
+
   return (
     <>
       <div className="px-[10px] lg:px-[80px] lg:py-[80px] flex items-center justify-center h-[90vh] max-w-[1440px] mx-auto">
@@ -21,10 +32,16 @@ const Community = () => {
           </p>
 
           <div className="flex flex-col mt-4 lg:flex-row justify-between w-full lg:mt-10">
-            <button className="bg-pink py-[10px] lg:w-[300px] mb-[32px] rounded-[4px] text-white hover:bg-primary200 hover:text-black duration-500">
+            <button
+              onClick={HandleNursingMothers}
+              className="bg-pink py-[10px] lg:w-[300px] mb-[32px] rounded-[4px] text-white hover:bg-primary200 hover:text-black duration-500"
+            >
               Nursing Mom
             </button>
-            <button className="bg-pink py-[10px] lg:w-[300px] mb-[32px] rounded-[4px] text-white hover:bg-primary200 hover:text-black duration-500">
+            <button
+              onClick={HandleExpectingMothers}
+              className="bg-pink py-[10px] lg:w-[300px] mb-[32px] rounded-[4px] text-white hover:bg-primary200 hover:text-black duration-500"
+            >
               Expecting Mom
             </button>
           </div>

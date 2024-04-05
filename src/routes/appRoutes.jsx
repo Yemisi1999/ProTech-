@@ -6,10 +6,9 @@ import HealthAndWellness from "../pages/healthandwellness/HealthAndWellness";
 import MarketPlace from "../pages/marketplace/MarketPlace";
 import Community from "../pages/community/Community";
 import LoginForm from "../pages/signInForm/LoginForm";
-
+import Dashboard from "../pages/community/Dashboard";
 
 const AppRoutes = () => {
- 
   return (
     <Routes>
       {/* Home Page */}
@@ -23,6 +22,7 @@ const AppRoutes = () => {
 
       {/* Community Page */}
       <Route path="/community" element={<Community />} />
+      <Route path="/community:id" element={<Dashboard />} />
 
       {/* Auth Screens */}
       <Route path="/sign-up" element={<SignUpForm />} />

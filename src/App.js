@@ -10,7 +10,6 @@ function App() {
         smooth
         className="flex justify-center items-center"
       />
-      ;
       <AppRoutes />
     </div>
   );

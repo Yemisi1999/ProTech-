@@ -9,10 +9,10 @@ const Topbar = () => {
     setOpen(!open)
   }
   return (
-    <>
+    <div className="fixed top-0 bg-white w-full z-[999]">
       <Navbar setOpen={setOpen} open={open} ToggleMenu={ToggleMenu}/>
       <NavItems open={open} />
-    </>
+    </div>
   );
 };
 

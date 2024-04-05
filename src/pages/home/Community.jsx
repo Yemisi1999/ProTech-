@@ -17,7 +17,7 @@ const Community = () => {
       </div>
       <div className="my-[10px] lg:my-[28px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[24px]">
-          <Link to="/community?title=nursing-mothers">
+          <Link to="/community">
             <div className="rounded-[20px] bg-secondary cursor-pointer">
               <img
                 src={nursing}
@@ -29,7 +29,7 @@ const Community = () => {
               </p>
             </div>
           </Link>
-          <Link to="/community?title=expectant-mothers">
+          <Link to="/community">
             <div className="rounded-[20px] bg-lightpink cursor-pointer">
               <img
                 src={expectant}

@@ -72,7 +72,7 @@ const Herosection = () => {
   };
 
   return (
-    <div className="hero h-[350px] lg:h-[500px] relative py-[30px] flex flex-col items-center justify-center">
+    <div className="hero h-[350px] lg:h-[500px] relative py-[30px] flex flex-col items-center justify-center mt-[75px] lg:mt-[145px]">
       <div className="lg:absolute inset-0 flex items-center justify-center md:px-[50px]">
         <button
           className="mx-1 text-gray-600 focus:outline-none"

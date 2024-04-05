@@ -38,7 +38,9 @@ const Navbar = ({ open, ToggleMenu }) => {
           />
         </div>
         <div className="w-[50px] lg:w-[68px]">
-          <img src={Logo} alt="Logo" />
+          <Link to="/">
+            <img src={Logo} alt="Logo" />
+          </Link>
         </div>
         <div>
           <Link to="/sign-up">

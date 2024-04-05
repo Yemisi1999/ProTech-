@@ -23,15 +23,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-[50%] flex flex-col lg:flex-row gap-[20px]">
+        <div className="lg:w-[50%] px-[30px] lg:px-0 flex flex-col lg:flex-row gap-[20px]">
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Email address"
-            className="py-[8px] px-[8px] w-full rounded-[4px] "
+            className="py-[8px] px-[12px] w-full rounded-[4px] outline-none"
           />
-          <button className="bg-pink text-white py-[8px] px-[16px] rounded-[4px]">
+          <button className="bg-pink text-white py-[8px] px-[16px] rounded-[4px] hover:bg-primary200 hover:text-black duration-500">
             Subscribe
           </button>
         </div>
