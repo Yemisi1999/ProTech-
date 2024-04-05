@@ -1,5 +1,5 @@
 import React from "react";
-import Topbar from "../../components/navbar/Topbar";
+// import Topbar from "../../components/navbar/Topbar";
 
 const Community = () => {
   return (
