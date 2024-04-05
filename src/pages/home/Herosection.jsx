@@ -72,27 +72,28 @@ const Herosection = () => {
   };
 
   return (
-    <div className="hero lg:h-[500px] relative py-[30px]">
-      <div className="lg:absolute inset-0 flex items-center justify-center lg:px-[50px]">
+    <div className="hero h-[350px] lg:h-[500px] relative py-[30px] flex flex-col items-center justify-center">
+      <div className="lg:absolute inset-0 flex items-center justify-center md:px-[50px]">
         <button
           className="mx-1 text-gray-600 focus:outline-none"
           onClick={goToPrevSlide}
         >
-          <SlArrowLeft size={30} />
+          <SlArrowLeft size={30} className="lg:flex hidden" />
+          <SlArrowLeft size={15} className="flex lg:hidden" />
         </button>
         <div className="flex items-center justify-center lg:px-[100px]">
-          <div className="flex flex-col gap-[10px] w-[50%]">
-            <H1Heading className="text-left text-[#000]">
+          <div className="flex flex-col gap-[10px] lg:w-[50%]">
+            <H1Heading className="text-center lg:text-left text-[#000]">
               {slides[currentSlide].heading}
             </H1Heading>
-            <p className="lg:text-[20px] font-[400]">
+            <p className="lg:text-[20px] font-[400] px-6 lg:px-0 text-center lg:text-left">
               {slides[currentSlide].text}
             </p>
-            <button className="text-primary text-left mt-[20px] font-[400]">
+            <button className="text-primary text-center lg:text-left mt-[10px] lg:mt-[20px] font-[400]">
               Learn more
             </button>
           </div>
-          <div className="w-[50%] h-[280px]">
+          <div className="w-[50%] h-[280px] hidden lg:flex">
             <img
               src={slides[currentSlide].image}
               alt="hero-pics"
@@ -104,10 +105,11 @@ const Herosection = () => {
           className="mx-1 text-gray-600 focus:outline-none"
           onClick={goToNextSlide}
         >
-          <SlArrowRight size={30} />
+          <SlArrowRight size={30} className="lg:flex hidden" />
+          <SlArrowRight size={15} className="flex lg:hidden" />
         </button>
       </div>
-      <div className="absolute inset-x-0 bottom-0 flex gap-[40px] justify-center py-[30px]">
+      <div className="absolute inset-x-0 bottom-0 flex lg:gap-[40px] justify-center py-[15px] lg:py-[30px] ">
         {slides.map((slide, index) => (
           <span
             key={index}

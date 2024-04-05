@@ -13,7 +13,7 @@ const FAQS = () => {
     {
       id: 2,
       question:
-        "Are there..................................................................................................................?",
+        "Are there other products to be recommended by the doctor soon ?",
       answer:
         " Some of them are recommended by health professionals while some of them are not. Kindly read through the description of each item for further details.",
       isOpen: false,
@@ -21,7 +21,7 @@ const FAQS = () => {
     {
       id: 3,
       question:
-        "Is IT there.............................................................................................................................................................................?",
+        "I need more recommendations. Are there other products to be recommended by the doctor this week or next month preferably? ",
       answer:
         " Some of them are recommended by health professionals while some of them are not. Kindly read through the description of each item for further details.",
       isOpen: false,
@@ -35,7 +35,7 @@ const FAQS = () => {
   };
 
   return (
-    <div className="bg-[#FFF5FA]  flex flex-col  px-[10px] lg:px-[130px] py-[30px] lg:py-[60px]">
+    <div className="bg-[#FFF5FA]  flex flex-col  px-[10px] md:px-[130px] py-[30px] lg:py-[60px]">
       <H1Heading className="text-center text-[#000]">
         Frequently Asked Questions
       </H1Heading>
@@ -47,10 +47,10 @@ const FAQS = () => {
               className={`py-[20px] px-[32px] bg-lightpink rounded-[20px] cursor-pointer 
               ${
                 faq.id === 1
-                  ? "w-[400px]"
+                  ? "lg:w-[400px]"
                   : faq.id === 2
-                  ? "w-[600px]"
-                  : "w-full"
+                  ? "lg:w-[600px]"
+                  : "lg:w-full"
               }
               `}
             >

@@ -3,7 +3,6 @@ import NavBarSection from "../../components/navbar/Topbar";
 import HeroSection from "./Herosection";
 import AboutSectionSection from "./About";
 import HealthAndWellness from "./HealthAndWellness";
-import ToolsAndFeaturesSection from "./ToolsAndFeatures";
 import MarketplaceSection from "./Marketplace";
 import CommunitySection from "./Community";
 import FAQSSection from "./FAQS";
@@ -16,7 +15,6 @@ const Home = () => {
       <HeroSection />
       <AboutSectionSection />
       <HealthAndWellness />
-      <ToolsAndFeaturesSection />
       <MarketplaceSection />
       <CommunitySection />
       <FAQSSection />
