@@ -1,12 +1,10 @@
 import React from "react";
 import Logo from "../../assets/LOGO.png";
 import { Link } from "react-router-dom";
-// import Topbar from "../../components/navbar/Topbar";
 
 const Community = () => {
   return (
     <>
-      {/* <Topbar /> */}
       <div className="px-[10px] lg:px-[80px] lg:py-[80px] flex items-center justify-center h-[90vh] max-w-[1440px] mx-auto">
         <div className="flex flex-col gap-[10px] items-center justify-center lg:w-[70%] ">
           <Link to="/">
