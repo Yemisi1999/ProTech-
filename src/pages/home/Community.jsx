@@ -2,6 +2,7 @@ import React from "react";
 import H1Heading from "../../components/headings/H1Heading";
 import nursing from "../../assets/nursingmothers.svg";
 import expectant from "../../assets/expectantmothers.svg";
+import { Link } from "react-router-dom";
 
 const Community = () => {
   return (
@@ -16,26 +17,30 @@ const Community = () => {
       </div>
       <div className="my-[10px] lg:my-[28px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[24px]">
-          <div className="rounded-[20px] bg-secondary cursor-pointer">
-            <img
-              src={nursing}
-              alt=" nursing-mothers-imgs"
-              className="rounded-t-[20px]"
-            />
-            <p className="text-center py-[27px] lg:text-[20px]">
-              Nursing Mothers
-            </p>
-          </div>
-          <div className="rounded-[20px] bg-lightpink cursor-pointer">
-            <img
-              src={expectant}
-              alt="expectant-mothers-imgs"
-              className="rounded-t-[20px]"
-            />
-            <p className="text-center py-[27px] lg:text-[20px]">
-              Expecting Mothers
-            </p>
-          </div>
+          <Link to="/community">
+            <div className="rounded-[20px] bg-secondary cursor-pointer">
+              <img
+                src={nursing}
+                alt=" nursing-mothers-imgs"
+                className="rounded-t-[20px]"
+              />
+              <p className="text-center py-[27px] lg:text-[20px]">
+                Nursing Mothers
+              </p>
+            </div>
+          </Link>
+          <Link to="/community">
+            <div className="rounded-[20px] bg-lightpink cursor-pointer">
+              <img
+                src={expectant}
+                alt="expectant-mothers-imgs"
+                className="rounded-t-[20px]"
+              />
+              <p className="text-center py-[27px] lg:text-[20px]">
+                Expecting Mothers
+              </p>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
