@@ -122,7 +122,7 @@ const Marketplace = () => {
                 ))}
               </div>
               <p className="lg:text-[16px]">{item.price}</p>
-              <button className="bg-pink p-[10px] lg:w-[90px] mb-[32px] rounded-[4px] text-white">
+              <button className="bg-pink p-[10px] lg:w-[90px] mb-[32px] rounded-[4px] text-white hover:bg-primary200 hover:text-black duration-500">
                 View
               </button>
             </div>
