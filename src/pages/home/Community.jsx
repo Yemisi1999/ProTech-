@@ -6,7 +6,7 @@ import expectant from "../../assets/expectantmothers.svg";
 const Community = () => {
   return (
     <div className="flex flex-col items-center justify-center px-[10px] lg:px-[130px] py-[10px] lg:py-[40px]">
-      <div className="bg-white w-[730px] py-[24px] flex flex-col gap-[40px] items-center justify-center">
+      <div className="bg-white lg:w-[730px] py-[24px] flex flex-col gap-[40px] items-center justify-center">
         <H1Heading className="text-center text-[#000]">
           Join our Community
         </H1Heading>
