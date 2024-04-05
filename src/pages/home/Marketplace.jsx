@@ -29,13 +29,13 @@ const Marketplace = () => {
 
   const babyItems = [
     {
-      image: clothe,
-      name: "Newborn Baby Girl’s casual romper",
+      image: casual,
+      name: "Baby Boy’s casual two piece",
       price: "$20.00",
     },
     {
-      image: casual,
-      name: "Baby Boy’s casual two piece",
+      image: clothe,
+      name: "Newborn Baby Girl’s casual romper",
       price: "$20.00",
     },
   ];
