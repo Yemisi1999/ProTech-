@@ -4,7 +4,7 @@ const H3Heading = ({ className, children }) => {
   return (
     <div
       style={{ fontFamily: "Noto Serif" }}
-      className={`lg:text-[24px] font-[500]  ${className}`}
+      className={`text-[16px] lg:text-[24px] font-[500]  ${className}`}
     >
       {children}
     </div>

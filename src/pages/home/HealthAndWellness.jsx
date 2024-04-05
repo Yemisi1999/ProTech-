@@ -67,8 +67,8 @@ const HealthAndWellness = () => {
   ];
 
   return (
-    <div className="health  flex flex-col items-center justify-center px-[10px] lg:px-[130px] py-[30px] lg:py-[60px]">
-      <div className="flex flex-col gap-[8px]">
+    <div id="health" className="health  flex flex-col items-center justify-center px-[10px] md:px-[130px] py-[30px] lg:py-[60px]">
+      <div className="flex flex-col gap-[8px] mb-6 lg:mb-0">
         <H1Heading className="text-center text-[#000]">
           Health & Wellness
         </H1Heading>
@@ -82,7 +82,7 @@ const HealthAndWellness = () => {
           {articles.map((article) => (
             <div
               key={article.id}
-              className="flex gap-[20px] items-center bg-white p-[14px] cursor-pointer shadow-xl"
+              className="flex flex-col lg:flex-row gap-[20px] items-center bg-white p-[14px] cursor-pointer shadow-xl"
             >
               <div className="w-[250px]">
                 <img
@@ -92,14 +92,14 @@ const HealthAndWellness = () => {
                 />
               </div>
               <div className="flex flex-col gap-[10px]">
-                <H3Heading className=" text-[#000] text-left">
+                <H3Heading className=" text-[#000] text-center lg:text-left">
                   {article.title}
                 </H3Heading>
-                <h6 className="text-[14px] lg:text-[16px]">
+                <h6 className="text-[14px] lg:text-[16px] text-center lg:text-left">
                   {article.description}{" "}
-                  <span className="text-primary cursor-pointer">Read more</span>
+                  <span className="text-primary text-[14px] lg:text-[16px] cursor-pointer">Read more</span>
                 </h6>
-                <p className="text-[12px] lg:text-[14px]">
+                <p className="text-[12px] lg:text-[14px] text-center lg:text-left">
                   Contributed by {article.author}
                 </p>
               </div>

@@ -1,7 +1,6 @@
 export const navItems = [
-  { path: "/", label: "Home" },
-  { path: "/health-and-wellness", label: "Health & Wellness" },
-  { path: "/tools-and-features", label: "Tools & Features" },
-  { path: "/market-place", label: "Marketplace" },
-  { path: "/community", label: "Community" },
+  { path: "/", label: "Home", link: "/" },
+  { path: "/health-and-wellness", label: "Health & Wellness", link: "#health" },
+  { path: "/market-place", label: "Marketplace", link: "#market" },
+  { path: "/community", label: "Community", link: "#community" },
 ];

@@ -66,17 +66,20 @@ const Marketplace = () => {
   };
 
   return (
-    <div className="marketplace  flex flex-col  px-[10px] lg:px-[130px] py-[30px] lg:py-[60px]">
+    <div
+      id="market"
+      className="marketplace  flex flex-col  px-[10px] md:px-[130px] pb-10 lg:pb-16 "
+    >
       <div className="flex flex-col gap-[8px]">
         <H1Heading className="text-center text-[#000]">Marketplace</H1Heading>
         <H3Heading className=" text-[#000] text-center">
           Shop the best products for babies & mothers
         </H3Heading>
       </div>
-      <div className="mt-[10px] lg:mt-[40px]">
-        <div className="flex gap-[10px] w-[225px] bg-white p-2 rounded-[4px]">
+      <div className="mt-[40px]">
+        <div className="flex items-center gap-[10px] w-full md:w-[225px] bg-white p-2 rounded-[4px]">
           <button
-            className={`rounded-[4px] w-[70px] p-1 ${
+            className={`rounded-[4px] w-full md:w-[70px] p-1 ${
               selectedCategory === "All" ? "bg-primary text-white" : ""
             }`}
             onClick={() => handleCategoryClick("All")}
@@ -84,7 +87,7 @@ const Marketplace = () => {
             All
           </button>
           <button
-            className={`rounded-[4px] w-[100px] p-1 ${
+            className={`rounded-[4px] w-full md:w-[100px] p-1 ${
               selectedCategory === "Babies" ? "bg-primary text-white" : ""
             }`}
             onClick={() => handleCategoryClick("Babies")}
@@ -92,7 +95,7 @@ const Marketplace = () => {
             Babies
           </button>
           <button
-            className={`rounded-[4px] w-[70px] p-1 ${
+            className={`rounded-[4px] w-full md:w-[70px] p-1 ${
               selectedCategory === "Mothers" ? "bg-primary text-white" : ""
             }`}
             onClick={() => handleCategoryClick("Mothers")}
@@ -119,7 +122,7 @@ const Marketplace = () => {
                 ))}
               </div>
               <p className="lg:text-[16px]">{item.price}</p>
-              <button className="bg-pink p-[10px] w-[90px] mb-[32px] rounded-[4px] text-white">
+              <button className="bg-pink p-[10px] lg:w-[90px] mb-[32px] rounded-[4px] text-white">
                 View
               </button>
             </div>

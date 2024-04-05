@@ -3,11 +3,13 @@ import { Route, Routes } from "react-router-dom";
 import SignUpForm from "../pages/signup/signUpForm";
 import Home from "../pages/home/Home";
 import HealthAndWellness from "../pages/healthandwellness/HealthAndWellness";
-import ToolsAndFeatures from "../pages/toolsandfeatures/ToolsAndFeatures";
 import MarketPlace from "../pages/marketplace/MarketPlace";
 import Community from "../pages/community/Community";
 import LoginForm from "../pages/signInForm/LoginForm";
+
+
 const AppRoutes = () => {
+ 
   return (
     <Routes>
       {/* Home Page */}
@@ -15,9 +17,6 @@ const AppRoutes = () => {
 
       {/* Health and Wellness Page */}
       <Route path="/health-and-wellness" element={<HealthAndWellness />} />
-
-      {/* Tools and Features Page */}
-      <Route path="/tools-and-features" element={<ToolsAndFeatures />} />
 
       {/* Market Place Page */}
       <Route path="/market-place" element={<MarketPlace />} />
