@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { navItems } from "../data/data";
 
 const NavItems = () => {
@@ -14,7 +14,7 @@ const NavItems = () => {
               key={index}
               className={pathname === item.path ? "text-primary" : ""}
             >
-              <Link to={item.path}>{item.label}</Link>
+              <a href={item.link}>{item.label}</a>
             </li>
           ))}
         </ul>

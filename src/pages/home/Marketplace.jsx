@@ -66,7 +66,10 @@ const Marketplace = () => {
   };
 
   return (
-    <div className="marketplace  flex flex-col  px-[10px] md:px-[130px] pb-10 lg:pb-16 ">
+    <div
+      id="market"
+      className="marketplace  flex flex-col  px-[10px] md:px-[130px] pb-10 lg:pb-16 "
+    >
       <div className="flex flex-col gap-[8px]">
         <H1Heading className="text-center text-[#000]">Marketplace</H1Heading>
         <H3Heading className=" text-[#000] text-center">

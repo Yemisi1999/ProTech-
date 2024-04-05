@@ -67,7 +67,7 @@ const HealthAndWellness = () => {
   ];
 
   return (
-    <div className="health  flex flex-col items-center justify-center px-[10px] md:px-[130px] py-[30px] lg:py-[60px]">
+    <div id="health" className="health  flex flex-col items-center justify-center px-[10px] md:px-[130px] py-[30px] lg:py-[60px]">
       <div className="flex flex-col gap-[8px] mb-6 lg:mb-0">
         <H1Heading className="text-center text-[#000]">
           Health & Wellness

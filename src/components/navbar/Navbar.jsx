@@ -63,7 +63,7 @@ const Navbar = ({ open, ToggleMenu }) => {
               key={index}
               className={pathname === item.path ? "text-primary" : ""}
             >
-              <Link to={item.path}>{item.label}</Link>
+              <a href={item.link}>{item.label}</a>
             </li>
           ))}
         </ul>
