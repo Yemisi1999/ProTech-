@@ -1,24 +1,24 @@
 import React from "react";
-import NavBarSection from "../../components/navbar/Topbar";
-import HeroSection from "./Herosection";
-import AboutSectionSection from "./About";
-import HealthAndWellness from "./HealthAndWellness";
-import MarketplaceSection from "./Marketplace";
-import CommunitySection from "./Community";
-import FAQSSection from "./FAQS";
-import FooterSection from "./Footer";
+import NAVBAR_SECTION from "../../components/navbar/Topbar";
+import HERO_SECTION from "./Herosection";
+import ABOUT_SECTION from "./About";
+import HEALTHANDWELLNESS_SECTION from "./HealthAndWellness";
+import MARKETPLACE_SECTION from "./Marketplace";
+import COMMUNITY_SECTION from "./Community";
+import FAQS_SECTION from "./FAQS";
+import FOOTER_SECTION from "./Footer";
 
 const Home = () => {
   return (
     <>
-      <NavBarSection />
-      <HeroSection />
-      <AboutSectionSection />
-      <HealthAndWellness />
-      <MarketplaceSection />
-      <CommunitySection />
-      <FAQSSection />
-      <FooterSection />
+      <NAVBAR_SECTION />
+      <HERO_SECTION />
+      <ABOUT_SECTION />
+      <HEALTHANDWELLNESS_SECTION />
+      <MARKETPLACE_SECTION />
+      <COMMUNITY_SECTION />
+      <FAQS_SECTION />
+      <FOOTER_SECTION />
     </>
   );
 };
