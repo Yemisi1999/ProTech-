@@ -4,7 +4,7 @@ import Topbar from "../../components/navbar/Topbar";
 const Community = () => {
   return (
     <>
-      <Topbar />
+      {/* <Topbar /> */}
       <div className="px-[10px] lg:px-[80px] py-[10px]"> Community Page</div>
     </>
   );
