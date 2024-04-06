@@ -116,3 +116,7 @@ body {
   width: 20px;
   object-fit: contain;
 }
+#error {
+  color: rgb(244, 25, 25);
+  font-style: italic;
+}
