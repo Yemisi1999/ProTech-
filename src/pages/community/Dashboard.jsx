@@ -22,7 +22,36 @@ const Dashboard = () => {
     <>
       <Topbar />
       <div className="flex mt-[75px] lg:mt-[145px]">
-        <div className="hidden bg-primary200 lg:w-[198px] p-4  h-screen lg:flex flex-col gap-[20px] py-[50px] fixed top[145px]">
+        {/* Mobile Screen */}
+        <div className="flex flex-col items-center lg:hidden my-[40px] w-full px-2 ">
+          <Link to="/community" className="cursor-pointer">
+            <button className="underline cursor-pointer">GO BACK</button>
+          </Link>
+          <ul className="flex flex-wrap lg:gap-[16px] mt-[10px]">
+            <SidebarItem
+              icon={<TbUser size={20} />}
+              text="Profile"
+              isActive={activeComponent.type === ProfileComponent}
+              onClick={() => handleItemClick(<ProfileComponent />)}
+            />
+            <SidebarItem
+              icon={<IoMdNotificationsOutline size={20} />}
+              text="Notifications"
+              isActive={activeComponent.type === NotificationsComponent}
+              onClick={() => handleItemClick(<NotificationsComponent />)}
+            />
+            <SidebarItem
+              icon={<GoUnlock size={18} />}
+              text="Password"
+              isActive={activeComponent.type === PasswordComponent}
+              onClick={() => handleItemClick(<PasswordComponent />)}
+            />
+            <SidebarItem icon={<MdLogout size={18} />} text="Logout" />
+          </ul>
+        </div>
+
+        {/* Big Screen */}
+        <div className="hidden bg-primary200 lg:w-[15%] p-4  h-screen lg:flex flex-col gap-[20px] py-[50px] fixed top[145px]">
           <Link to="/community">
             <IoIosArrowBack size={20} />
           </Link>
@@ -51,7 +80,14 @@ const Dashboard = () => {
         </div>
 
         {/* Main content area */}
-        <div className="flex-1 p-[10px] lg:p-[50px] fixed top-[75px] lg:top-[145px] lg:left-[198px]">
+        <div
+          style={{
+            overflowY: "scroll",
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+          }}
+          className="flex-1 fixed p-[10px] lg:p-[50px] top-[220px] lg:top-[145px] w-full lg:w-[85%] lg:left-[15%] h-[80vh] "
+        >
           {activeComponent}
         </div>
       </div>
