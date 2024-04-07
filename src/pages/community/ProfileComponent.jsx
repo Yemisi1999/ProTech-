@@ -10,8 +10,7 @@ const ProfileComponent = () => {
   };
 
   const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    console.log("Selected file:", file);
+    const file = e.target.files[0]; 
 
     const reader = new FileReader();
     reader.onload = () => {
