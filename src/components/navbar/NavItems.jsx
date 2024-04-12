@@ -14,7 +14,7 @@ const NavItems = () => {
               key={index}
               className={pathname === item.path ? "text-primary" : ""}
             >
-              <a href={item.link}>{item.label}</a>
+              <a href={item.path}>{item.label}</a>
             </li>
           ))}
         </ul>

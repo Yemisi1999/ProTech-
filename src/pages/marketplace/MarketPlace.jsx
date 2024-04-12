@@ -5,7 +5,9 @@ const MarketPlace = () => {
   return (
     <>
       <Topbar />
-      <div className="px-[10px] py-[10px]  lg:px-[80px] "> Market Place</div>
+      <div className="px-[10px] py-[10px] mt-40 lg:px-[80px] ">
+        <h1 className="text-center">Market Place</h1>
+      </div>
     </>
   );
 };
