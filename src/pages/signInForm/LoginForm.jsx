@@ -18,6 +18,7 @@ const LoginForm = () => {
           </div>
         </div>
       </div>
+      
       <div className="rightSide p-4 flex flex-col justify-center lg:w-[50%] h-screen md:w-[400px] md:mx-auto lg:mx-0 lg:px-4">
         <div className="">
           <h1
