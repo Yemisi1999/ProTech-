@@ -1,24 +1,24 @@
 import React from "react";
 import "./signUpForm.css";
-import { useForm } from "react-hook-form";
-import { useState } from "react";
+// import { useForm } from "react-hook-form";
+// import { useState } from "react";
 import logo from "../../assets/LOGO.png";
-import google from "../../assets/Google.png";
+// import google from "../../assets/Google.png";
 import { Link } from "react-router-dom";
 
 const SignUpForm = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const [userInfo, setUserInfo] = useState();
-  const onSubmit = (data, e) => {
-    setUserInfo(data);
-    e.target.reset();
-    alert("Account created successfully, proceed to Login");
-    console.log(data);
-  };
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  // } = useForm();
+  // const [userInfo, setUserInfo] = useState();
+  // const onSubmit = (data, e) => {
+  //   setUserInfo(data);
+  //   e.target.reset();
+  //   alert("Account created successfully, proceed to Login");
+  //   console.log(data);
+  // };
 
   return (
     <div className="w-full lg:flex">
