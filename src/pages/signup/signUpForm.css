@@ -52,7 +52,7 @@ body {
 .form {
   position: flex;
   flex-direction: column;
-  opacity: 0px;
+  /* opacity: 0px; */
 }
 
 .form input {
